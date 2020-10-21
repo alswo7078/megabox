@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 오픈그래픽 -->
+  <meta property="og:url" content="https://pam7463.github.io/megabox/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="메가박스">
+  <meta property="og:image" content="https://pam7463.github.io/megabox/images/ogimage.jpg">
+  <meta property="og:description" content="대한민국 최고의 영화 그 감동을 느껴보세요">
+  <!-- 트위터그래픽 -->
+  <meta name="twitter:card" content="summary"> 
+  <meta name="twitter:title" content="메가박스"> 
+  <meta name="twitter:url" content="https://pam7463.github.io/megabox/">
+  <meta name="twitter:image" content="https://pam7463.github.io/megabox/images/ogimage.jpg"> 
+  <meta name="twitter:description" content="대한민국 최고의 영화 그 감동을 느껴보세요"/>
+
+  <!-- 문서/작성자 정보 -->
+  <meta name="Date" content="2020-10-20">
+  <meta name="Keywords" content="메가박스, megabox, 영화, movie, 극장">
+  <meta name="Description" content="대한민국 최고의 영화 그 감동을 느껴보세요">
+  <meta name="Author" content="megabox">
+
+  <title>MEGABOX</title>
+  <!-- 파비콘 -->
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+  <!-- CSS Reset -->
+  <link rel="stylesheet" href="./css/normalize.css">
+  <!-- swiper CSS -->
+  <link rel="stylesheet" href="./css/swiper-bundle.css">
+
+  <style>
+    /*======= 기본스타일 / 모바일 / 360px 이상 =======*/
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    *{font-family:'Roboto','Noto Sans KR',sans-serif;box-sizing:border-box;}
+    a{text-decoration:none;}
+    a:hover{text-decoration:underline;}
+    img{vertical-align:top;width:100%;}
+    ul,ol,li{list-style:none;}
+    .clearfix::after{content:'';display:block;clear:both;}
+    .fleft{float:left;}
+    .fright{float:right;}
+
+    .container{width:100%;max-width:1200px;margin:0 auto;padding:0 15px;}
+    .content{padding:40px 0;}
+
+    .skip_menu{position:fixed;left:0;top:-99999px;z-index:1;width:100%;padding:10px;background-color:#503396;text-align:center;}
+    .skip_menu.active{top:0;}
+    .skip_menu>a{display:inline-block;border:2px solid #ffffff;border-radius:5px;padding:6px 10px;color:#ffffff;}
+    
+    .banner01,.banner03{background-color:#4f79a9;display:none;}
+    .header{height:100px;background:red;}
+    .box_office{height:500px;background:green;}
+    .event{height:500px;background:blue;}
+    .curation{height:500px;background:yellow;}
+    .mega_info{height:500px;background:magenta;}
+    .footer{height:100px;background:red;}
+
+
+    /*======= 768px이상 스타일 / 테블릿 스타일 =======*/
+    @media(min-width:768px){
+      .container{width:80%;}
+      .content{padding:50px 0;}
+      .banner01,.banner03{display:block;}
+    }
+
+
+    /*======= 1200px이상 스타일 / pc 스타일 =======*/
+    @media(min-width:1200px){
+      .content{padding:60px 0;}
+    }
+  </style>
+
+</head>
+<body>
+  <section class="skip_menu">
+    <a href="#box_office">본문바로가기</a>
+    <a href="#footer">푸터바로가기</a>
+  </section>
+  <section class="wrap">
+    <section class="banner01">
+      <div class="container">
+        <img src="./images/hyundai1.jpg" alt="현대화재 베너">
+      </div>
+    </section>
+    <header class="header"></header>
+    <section class="section box_office" id="box_office"></section>
+    <section class="section event"></section>
+    <section class="section curation"></section>
+    <section class="section mega_info"></section>
+    <section class="section banner03">
+      <div class="container">
+        <img src="./images/hyundai3.jpg" alt="현대화재 베너">
+      </div>
+    </secction>
+    <footer class="footer" id="footer"></footer>
+  </section>
+ 
+
+  <!-- 스크립트 -->
+  <!-- jQuery -->
+  <script src="./js/jquery.js"></script>
+  <!-- swiper js -->
+  <script src="./js/swiper-bundle.js"></script>
+  <script src="./js/prefixfree.min.js"></script>
+
+  <script>
+    $(function(){
+      var skip=$('.skip_menu a');
+      var skipMenu=$('.skip_menu');
+
+      skip.on({
+        focus:function(){
+          skipMenu.addClass('active');
+        },
+        blur:function(){
+          skipMenu.removeClass('active');
+        }
+      });
+    })
+  </script>
+</body>
+</html>
