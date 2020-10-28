@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ko">
+<!-- =================== -->
+<script>
+  var scrWidth=screen.width;
+  if(scrWidth<1200){
+    location.replace('index.html');
+  }
+</script>
+<!-- ===================== -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 오픈그래픽 -->
+  <meta property="og:url" content="https://pam7463.github.io/megabox/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="메가박스">
+  <meta property="og:image" content="https://pam7463.github.io/megabox/images/ogimage.jpg">
+  <meta property="og:description" content="대한민국 최고의 영화 그 감동을 느껴보세요">
+  <!-- 트위터그래픽 -->
+  <meta name="twitter:card" content="summary"> 
+  <meta name="twitter:title" content="메가박스"> 
+  <meta name="twitter:url" content="https://pam7463.github.io/megabox/">
+  <meta name="twitter:image" content="https://pam7463.github.io/megabox/images/ogimage.jpg"> 
+  <meta name="twitter:description" content="대한민국 최고의 영화 그 감동을 느껴보세요"/>
+
+  <!-- 문서/작성자 정보 -->
+  <meta name="Date" content="2020-10-20">
+  <meta name="Keywords" content="메가박스, megabox, 영화, movie, 극장">
+  <meta name="Description" content="대한민국 최고의 영화 그 감동을 느껴보세요">
+  <meta name="Author" content="megabox">
+
+  <title>MEGABOX</title>
+  <!-- 파비콘 -->
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+  <!-- CSS Reset -->
+  <link rel="stylesheet" href="./css/normalize.css">
+  <!-- swiper CSS -->
+  <link rel="stylesheet" href="./css/swiper-bundle.css">
+  <!-- pc CSS -->
+  <link rel="stylesheet" href="./css/pc.css">
+
+</head>
+<body>
+  <!-- ===스킵=== -->
+  <section class="skip_menu">
+    <a href="#box_office">본문바로가기</a>
+    <a href="#footer">푸터바로가기</a>
+  </section>
+  
+  <section class="wrap">
+    <!-- banner01 -->
+    <section class="banner01">
+      <div class="container">
+        <img src="./images/hyundai1.jpg" alt="banner01">
+      </div>
+      <button type="button" id="banner01_close">X</button>
+    </section>
+    <!-- 해더+박스오피스 -->
+    <section class="wrap_top">
+      <!-- header -->
+      <header class="header">
+        <div class="container">
+          <h1 class="logo">
+            <a href="pc.html">
+              <img src="./images/logo-white.png" alt="로고" title="시작페이지로 이동">
+            </a>
+          </h1>
+          <nav class="nav header_left">
+            <div class="small_nav">
+              <ul>
+                <li><a href="#" title="vip라운지로 이동">VIP LOUNGE</a></li>
+                <li><a href="#" title="멤버십 페이지로 이동">멤버십</a></li>
+                <li><a href="#" title="고객센터로 이동">고객센터</a></li>
+              </ul>
+            </div>
+            <div class="large_nav">
+              <div class="img_nav">
+                <a href="#" title="모든 메뉴 보기">
+                  <img src="./images/sitemap-white.png" alt="모든메뉴보기">
+                </a>
+                <a href="#" title="영화 검색">
+                  <img src="./images/search-white.png" alt="영화검색">
+                </a>
+              </div>
+              <div class="nav_list">
+                <ul>
+                  <li>
+                    <a href="#" title="영화">영화</a>
+                    <ul>
+                      <li><a href="#" title="전체영화">전체영화</a></li>
+                      <li><a href="#" title="큐레이션">큐레이션</a></li>
+                      <li><a href="#" title="무비포스트">무비포스트</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#" title="예매">예매</a>
+                    <ul>
+                      <li><a href="#" title="빠른예매">빠른예매</a></li>
+                      <li><a href="#" title="상영시간표">상영시간표</a></li>
+                      <li><a href="#" title="더 부티크 프라이빗 예매">더 부티크 프라이빗 예매</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#" title="극장">극장</a>
+                    <ul>
+                      <li><a href="#" title="전체극장">전체극장</a></li>
+                      <li><a href="#" title="특별관">특별관</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <nav class="nav header_right">
+            <div class="small_nav">
+              <ul>
+                <li><a href="#" title="로그인페이지로 이동">로그인</a></li>
+                <li><a href="#" title="회원가입페이지로 이동">회원가입</a></li>
+                <li><a href="#" title="빠른예매하기">빠른예매</a></li>
+              </ul>
+            </div>
+            <div class="large_nav">
+              <div class="img_nav">
+                <a href="#" title="상영시간표">
+                  <img src="./images/schedule-white.png" alt="상영시간표">
+                </a>
+                <a href="#" title="나의 메가박스">
+                  <img src="./images/mymega-white.png" alt="나의 메가박스">
+                </a>
+              </div>
+              <div class="nav_list">
+                <ul>
+                  <li>
+                    <a href="#" title="이벤트">이벤트</a>
+                    <ul>
+                      <li><a href="#" title="진행중 이벤트">진행중 이벤트</a></li>
+                      <li><a href="#" title="지난 이벤트">지난 이벤트</a></li>
+                      <li><a href="#" title="당첨자 발표">당첨자 발표</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#" title="스토어">스토어</a>
+                  </li>
+                  <li>
+                    <a href="#" title="혜택">혜택</a>
+                    <ul>
+                      <li><a href="#" title="메가박스 멤버십">메가박스 멤버십</a></li>
+                      <li><a href="#" title="제휴할인">제휴할인</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <section class="section box_office">
+
+      </section>
+    </section>
+    <section class="section benefit"></section>
+    <section class="section curation"></section>
+    <section class="section mega_info"></section>
+    <section class="banner02"></section>
+    <footer class="footer"></footer>
+  </section>
+
+  <!-- 스크립트 -->
+  <!-- jQuery -->
+  <script src="./js/jquery.js"></script>
+  <!-- swiper js -->
+  <script src="./js/swiper-bundle.js"></script>
+  <script src="./js/prefixfree.min.js"></script>
+  <!-- cookie -->
+  <script src="./js/jquery.cookie.min.js"></script>
+  <!-- pc js -->
+  <script src="./js/pc.js"></script>
+
+</body>
+</html>
