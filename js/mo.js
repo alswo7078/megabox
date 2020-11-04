@@ -100,9 +100,13 @@ $(function(){
   // 무비클립
   $('.play_btn').on('click',function(){
     $('.movie_clip').show();
+    // document.getElementById('video01').play();
+    $('#video01').get(0).play();
   });
   $('#close_clip').on('click',function(){
     $('.movie_clip').hide();
+    // document.getElementById('video01').pause();
+    $('#video01').get(0).pause();
   });
 
   var wrapBottomHeight = $('.wrap_bottom').height();
